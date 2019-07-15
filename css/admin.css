@@ -1,0 +1,152 @@
+.row-header{
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.row-content{
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+}
+
+.footer{
+  background-color: #a3b7d7;
+  margin: 0px auto;
+  padding: 20px 0px 20px 0px;
+}
+
+.jumbotron{
+  padding: 70px 30px 70px 30px;
+  margin: 0px auto;
+  background: #6597c0;
+  color: floralwhite;
+}
+
+.address{
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f;
+}
+
+body{
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+}
+
+.navbar-dark{
+  background-color: #015697;
+}
+
+.carousel{
+  background: #015697;
+}
+
+.carousel-item{
+  height: 300px;
+}
+
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
+}
+
+#carouselButton {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.modal .modal-header {
+  background-color: #512DA8;
+  color: floralwhite; }
+
+.modal .modal-header button {
+    color: floralwhite; }
+
+.modal .modal-body {
+  background-color: #D1C4E9; }
+
+
+.map-container-5{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-5 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+.tab-content{
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+/* <- Demo Stuff Start */
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.modbtn {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+ }
+
+/* Demo Stuff End -> */
+
+/* <- Magic Stuff Start */
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.btn-1 {
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+}
+
+.btn-2 {
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+
+.btn-3 {
+  background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+}
+
+.btn-4 {
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+}
+
+.btn-5 {
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
+}
+
+/* Magic Stuff End -> */
