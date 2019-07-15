@@ -350,7 +350,7 @@
             </div>
             <div class="col col-sm order-sm-first col-md">
               <div class="media">
-                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/director.png" alt="Director's photo">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/director0.png" alt="Director's photo">
                 <div class="media-body">
                   <h2 class="mt-0">Sunil Jaiswal</h2>
                   <h4>Director</h4>
