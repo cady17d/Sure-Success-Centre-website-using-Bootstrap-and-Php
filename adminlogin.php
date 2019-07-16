@@ -8,21 +8,47 @@ session_start();
 
 ?>
 
+<?php
+
+if(isset($_POST["username"],$_POST["password"])){
+    $myfile = file_get_contents("admin.json");
+    $jsontxt=json_decode($myfile, true);
+    $cnt=0;
+    $flag=0;
+    while($cnt!=count($jsontxt)){
+        if($jsontxt[$cnt]["id"]==$_POST['username'] && $jsontxt[$cnt]["pwd"]==$_POST['password']){
+            echo "correct";
+            $cnt=count($jsontxt);
+            $flag=1;
+            $_SESSION['sessionid']=rand();
+            header("Location: admin.php");
+        }
+        else $cnt=$cnt+1;
+    }
+    if($flag==0){
+        $_SESSION['incorrect']=1;
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Simple Login Form with Blue Background</title>
+<title>SSC Admin Login</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 <style type="text/css">
 	body {
 		color: #fff;
-		background: #3598dc;
+		background: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
 	}
 	.form-control {
 		min-height: 41px;
@@ -81,7 +107,32 @@ session_start();
 <body>
 <div class="login-form">
     <form action="adminlogin.php" method="POST">
-        <h2 class="text-center">Login</h2>   
+        <a href="./index.php" class="col-12 col-sm align-self-center" target="_blank" rel="noopener">
+        <img src="img/logo0.png" class="img-fluid">
+        </a>
+        <h2 class="text-center">Welcome Admin!</h2>
+        <h2 class="text-center">Login to continue</h2>   
+        
+        <?php
+        
+        if(isset($_SESSION['incorrect'])){
+            if($_SESSION['incorrect']==1){
+                
+        ?>
+        
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Invalid Credentials!</strong> Enter the correct username & password.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+        
+        <?php
+            }
+        }
+        
+        ?>
+        
         <div class="form-group has-error">
         	<input type="text" class="form-control" name="username" placeholder="Username" required="required">
         </div>
@@ -94,29 +145,10 @@ session_start();
         <p><a href="#">Change Password?</a></p>
     </form>
 </div>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>                            
-
-<?php
-
-if(isset($_POST["username"],$_POST["password"])){
-    $myfile = file_get_contents("admin.json");
-    $jsontxt=json_decode($myfile, true);
-    $cnt=0;
-    $flag=0;
-    while($cnt!=count($jsontxt)){
-        if($jsontxt[$cnt]["id"]==$_POST['username'] && $jsontxt[$cnt]["pwd"]==$_POST['password']){
-            echo "correct";
-            $cnt=count($jsontxt);
-            $flag=1;
-            $_SESSION['sessionid']=rand();
-            header("Location: admin.php");
-        }
-        else $cnt=$cnt+1;
-    }
-    if($flag==0){
-        echo "incorrect";
-    }
-}
-
-?>

@@ -137,7 +137,7 @@ $_SESSION['location']="gallery";
 
             overwriteInitial: false,
 
-            maxFileSize:2000,
+            maxFileSize:10000,
 
             maxFilesNum: 10,
 
