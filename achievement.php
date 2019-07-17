@@ -70,36 +70,39 @@
                 
                 <ul class="nav nav-tabs">
                   <li class="nav-item">
-                    <a class="nav-link active" href="#bankclerk" role="tab" data-toggle="tab">Bank Clerk</a>
+                    <a class="nav-link active" href="#bank" role="tab" data-toggle="tab">Bank</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#bankpo" role="tab" data-toggle="tab">Bank P.O</a>
+                    <a class="nav-link" href="#mba" role="tab" data-toggle="tab">MBA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#jssc" role="tab" data-toggle="tab">JSSC</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#ssc" role="tab" data-toggle="tab">SSC</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#mix" role="tab" data-toggle="tab">Miscellaneous</a>
+                    <a class="nav-link" href="#railway" role="tab" data-toggle="tab">Railway</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#defence" role="tab" data-toggle="tab">Defence</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#hotelmanagement" role="tab" data-toggle="tab">Hotel Management</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#general" role="tab" data-toggle="tab">General</a>
                   </li>
                 </ul>
 
                 <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane fade show active" id="bankclerk">
-                    <h3>Selected Candidates in Bank (Clerk)</h3>
+                  <div role="tabpanel" class="tab-pane fade show active" id="bank">
+                    <h3>Selected Candidates in Bank</h3>
                     
                       <div class="row row-content">
 
-                    <!-- <div class="col-sm-5">
-                    </div>
-                    <div class="col-12 col-sm-7">
-                    <h1>Achievers</h1>
-                    </div> -->
-
-
-
-
                    <?php
-                      $dirname = "uploads/photos/achievements/bankclerk";
+                      $dirname = "uploads/photos/achievements/bank";
                     $images = scandir($dirname);
                     $ignore = Array(".", "..");
                     foreach($images as $curimg){
@@ -110,12 +113,10 @@
 
                                     <div class="col-6 col-md-2">
                                     <div class="card mt-5">
-                                    <img src="uploads/photos/achievements/bankclerk/<?php echo $curimg; ?>" class="card-img-top" alt="...">
-                                <!--    <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">text</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    </div> -->
+                                    <img src="uploads/photos/achievements/bank/<?php echo $curimg; ?>" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <p class="card-text"><small><?php $name=pathinfo($curimg,PATHINFO_FILENAME); echo $name; ?></small></p>
+                                    </div> 
                                     </div>
                                     </div>
 
@@ -130,22 +131,13 @@
                   </div>
 
 
-                  <div role="tabpanel" class="tab-pane fade" id="bankpo">
-                    <h3>Selected Candidates in Bank (P.O)</h3>
+                  <div role="tabpanel" class="tab-pane fade" id="mba">
+                    <h3>Selected Candidates in MBA</h3>
                     
                       <div class="row row-content">
 
-                    <!-- <div class="col-sm-5">
-                    </div>
-                    <div class="col-12 col-sm-7">
-                    <h1>Achievers</h1>
-                    </div> -->
-
-
-
-
                    <?php
-                      $dirname = "uploads/photos/achievements/bankpo";
+                      $dirname = "uploads/photos/achievements/mba";
                     $images = scandir($dirname);
                     $ignore = Array(".", "..");
                     foreach($images as $curimg){
@@ -156,12 +148,10 @@
 
                                     <div class="col-6 col-md-2">
                                     <div class="card mt-5">
-                                    <img src="uploads/photos/achievements/bankpo/<?php echo $curimg; ?>" class="card-img-top" alt="...">
-                                <!--    <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">text</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    </div> -->
+                                    <img src="uploads/photos/achievements/mba/<?php echo $curimg; ?>" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <p class="card-text"><small><?php $name=pathinfo($curimg,PATHINFO_FILENAME); echo $name; ?></small></p>
+                                    </div>  
                                     </div>
                                     </div>
 
@@ -176,6 +166,40 @@
                   </div>
 
 
+                  <div role="tabpanel" class="tab-pane fade" id="jssc">
+                    <h3>Selected Candidates in JSSC</h3>
+                      
+                      <div class="row row-content">
+
+                   <?php
+                      $dirname = "uploads/photos/achievements/jssc";
+                    $images = scandir($dirname);
+                    $ignore = Array(".", "..");
+                    foreach($images as $curimg){
+                    if(!in_array($curimg, $ignore)) {
+
+                    ?>
+
+
+                                    <div class="col-6 col-md-2">
+                                    <div class="card mt-5">
+                                    <img src="uploads/photos/achievements/jssc/<?php echo $curimg; ?>" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <p class="card-text"><small><?php $name=pathinfo($curimg,PATHINFO_FILENAME); echo $name; ?></small></p>
+                                    </div> 
+                                    </div>
+                                    </div>
+
+                    <?php
+                    //echo "<br>\n";
+                    };
+                    }  
+                    ?>
+
+                    </div>
+                      
+                  </div>
+                    
                   <div role="tabpanel" class="tab-pane fade" id="ssc">
                     <h3>Selected Candidates in SSC</h3>
                       
@@ -194,11 +218,9 @@
                                     <div class="col-6 col-md-2">
                                     <div class="card mt-5">
                                     <img src="uploads/photos/achievements/ssc/<?php echo $curimg; ?>" class="card-img-top" alt="...">
-                                <!--    <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">text</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    </div> -->
+                                    <div class="card-body">
+                                    <p class="card-text"><small><?php $name=pathinfo($curimg,PATHINFO_FILENAME); echo $name; ?></small></p>
+                                    </div> 
                                     </div>
                                     </div>
 
@@ -212,13 +234,13 @@
                       
                   </div>
                     
-                  <div role="tabpanel" class="tab-pane fade" id="mix">
-                    <h3>Selected Candidates in Other fields</h3>
+                  <div role="tabpanel" class="tab-pane fade" id="railway">
+                    <h3>Selected Candidates in Railway</h3>
                       
                       <div class="row row-content">
 
                    <?php
-                      $dirname = "uploads/photos/achievements/mix";
+                      $dirname = "uploads/photos/achievements/railway";
                     $images = scandir($dirname);
                     $ignore = Array(".", "..");
                     foreach($images as $curimg){
@@ -229,12 +251,112 @@
 
                                     <div class="col-6 col-md-2">
                                     <div class="card mt-5">
-                                    <img src="uploads/photos/achievements/mix/<?php echo $curimg; ?>" class="card-img-top" alt="...">
-                                <!--    <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">text</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    </div> -->
+                                    <img src="uploads/photos/achievements/railway/<?php echo $curimg; ?>" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <p class="card-text"><small><?php $name=pathinfo($curimg,PATHINFO_FILENAME); echo $name; ?></small></p>
+                                    </div> 
+                                    </div>
+                                    </div>
+
+                    <?php
+                    //echo "<br>\n";
+                    };
+                    }  
+                    ?>
+
+                    </div>
+                      
+                  </div>  
+                    
+                  <div role="tabpanel" class="tab-pane fade" id="defence">
+                    <h3>Selected Candidates in Defence</h3>
+                      
+                      <div class="row row-content">
+
+                   <?php
+                      $dirname = "uploads/photos/achievements/defence";
+                    $images = scandir($dirname);
+                    $ignore = Array(".", "..");
+                    foreach($images as $curimg){
+                    if(!in_array($curimg, $ignore)) {
+
+                    ?>
+
+
+                                    <div class="col-6 col-md-2">
+                                    <div class="card mt-5">
+                                    <img src="uploads/photos/achievements/defence/<?php echo $curimg; ?>" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <p class="card-text"><small><?php $name=pathinfo($curimg,PATHINFO_FILENAME); echo $name; ?></small></p>
+                                    </div> 
+                                    </div>
+                                    </div>
+
+                    <?php
+                    //echo "<br>\n";
+                    };
+                    }  
+                    ?>
+
+                    </div>
+                      
+                  </div>
+                    
+                  <div role="tabpanel" class="tab-pane fade" id="hotelmanagement">
+                    <h3>Selected Candidates in Hotel Management</h3>
+                      
+                      <div class="row row-content">
+
+                   <?php
+                      $dirname = "uploads/photos/achievements/hotelmanagement";
+                    $images = scandir($dirname);
+                    $ignore = Array(".", "..");
+                    foreach($images as $curimg){
+                    if(!in_array($curimg, $ignore)) {
+
+                    ?>
+
+
+                                    <div class="col-6 col-md-2">
+                                    <div class="card mt-5">
+                                    <img src="uploads/photos/achievements/hotelmanagement/<?php echo $curimg; ?>" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <p class="card-text"><small><?php $name=pathinfo($curimg,PATHINFO_FILENAME); echo $name; ?></small></p>
+                                    </div> 
+                                    </div>
+                                    </div>
+
+                    <?php
+                    //echo "<br>\n";
+                    };
+                    }  
+                    ?>
+
+                    </div>
+                      
+                  </div>
+                    
+                  <div role="tabpanel" class="tab-pane fade" id="general">
+                    <h3>Selected Candidates in General</h3>
+                      
+                      <div class="row row-content">
+
+                   <?php
+                      $dirname = "uploads/photos/achievements/general";
+                    $images = scandir($dirname);
+                    $ignore = Array(".", "..");
+                    foreach($images as $curimg){
+                    if(!in_array($curimg, $ignore)) {
+
+                    ?>
+
+
+                                    <div class="col-6 col-md-2">
+                                    <div class="card mt-5">
+                                    <img src="uploads/photos/achievements/general/<?php echo $curimg; ?>" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <p class="card-text"><small><?php $name=pathinfo($curimg,PATHINFO_FILENAME); echo $name; ?></small></p>
+                                    </div> 
                                     </div>
                                     </div>
 

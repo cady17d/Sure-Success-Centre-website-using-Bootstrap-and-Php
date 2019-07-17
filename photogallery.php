@@ -80,7 +80,7 @@ if(!in_array($curimg, $ignore)) {
                 <div class="card mt-5">
                 <img src="uploads/photos/gallery/<?php echo $curimg; ?>" class="card-img-top" alt="...">
                 <div class="card-body">
-                <h5 class="card-title"><?php echo $curimg; ?></h5>
+                <h5 class="card-title"><?php $name=pathinfo($curimg,PATHINFO_FILENAME); echo $name; ?></h5>
                 </div>
                 </div>
                 </div>

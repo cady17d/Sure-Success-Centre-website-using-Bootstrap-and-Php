@@ -14,13 +14,21 @@ if ( isset($_GET['location']) ) {
                 break;
         case 3: $_SESSION['location'] ="topperformers";
                 break;
-        case 4: $_SESSION['location'] ="achievements/bankclerk";
+        case 4: $_SESSION['location'] ="achievements/bank";
                 break;
-        case 5: $_SESSION['location'] ="achievements/bankpo";
+        case 5: $_SESSION['location'] ="achievements/mba";
                 break;
-        case 6: $_SESSION['location'] ="achievements/ssc";
+        case 6: $_SESSION['location'] ="achievements/jssc";
                 break;
-        case 7: $_SESSION['location'] ="achievements/mix";
+        case 7: $_SESSION['location'] ="achievements/ssc";
+                break;
+        case 8: $_SESSION['location'] ="achievements/railway";
+                break;
+        case 9: $_SESSION['location'] ="achievements/defence";
+                break;
+        case 10: $_SESSION['location'] ="achievements/hotelmanagement";
+                break;
+        case 11: $_SESSION['location'] ="achievements/general";
                 break;
         default: $_SESSION['location'] ="gallery";
     }
@@ -79,10 +87,14 @@ $_SESSION['location']="gallery";
             <a href="selectPhotosToUpload.php?location=1" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">Gallery</a>
             <a href="selectPhotosToUpload.php?location=2" class="btn btn-secondary btn-lg btn-block" role="button" aria-pressed="true">News Clippings</a>
             <a href="selectPhotosToUpload.php?location=3" class="btn btn-success btn-lg btn-block" role="button" aria-pressed="true">Top Performers</a>
-            <a href="selectPhotosToUpload.php?location=4" class="btn btn-danger btn-lg btn-block" role="button" aria-pressed="true">Bank Clerk(Achievements)</a>
-            <a href="selectPhotosToUpload.php?location=5" class="btn btn-warning btn-lg btn-block" role="button" aria-pressed="true">Bank P.O(Achievements)</a>
-            <a href="selectPhotosToUpload.php?location=6" class="btn btn-info btn-lg btn-block" role="button" aria-pressed="true">SSC(Achievements)</a>
-            <a href="selectPhotosToUpload.php?location=7" class="btn btn-dark btn-lg btn-block" role="button" aria-pressed="true">Miscellaneous(Achievements)</a>
+            <a href="selectPhotosToUpload.php?location=4" class="btn btn-danger btn-lg btn-block" role="button" aria-pressed="true">Bank(Achievements)</a>
+            <a href="selectPhotosToUpload.php?location=5" class="btn btn-warning btn-lg btn-block" role="button" aria-pressed="true">MBA(Achievements)</a>
+            <a href="selectPhotosToUpload.php?location=6" class="btn btn-info btn-lg btn-block" role="button" aria-pressed="true">JSSC(Achievements)</a>
+            <a href="selectPhotosToUpload.php?location=7" class="btn btn-light btn-lg btn-block" role="button" aria-pressed="true">SSC(Achievements)</a>
+            <a href="selectPhotosToUpload.php?location=8" class="btn btn-dark btn-lg btn-block" role="button" aria-pressed="true">Railway(Achievements)</a>
+            <a href="selectPhotosToUpload.php?location=9" class="btn btn-success btn-lg btn-block" role="button" aria-pressed="true">Defence(Achievements)</a>
+            <a href="selectPhotosToUpload.php?location=10" class="btn btn-secondary btn-lg btn-block" role="button" aria-pressed="true">Hotel Management(Achievements)</a>
+            <a href="selectPhotosToUpload.php?location=11" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">General(Achievements)</a>
           </div>
         </div>
       </div>
