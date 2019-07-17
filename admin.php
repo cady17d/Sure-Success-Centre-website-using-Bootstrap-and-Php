@@ -28,6 +28,14 @@ if (!isset($_SESSION['sessionid'])){
 
 <body style="background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);">
     
+    <nav class="navbar navbar-dark fixed-top">
+
+        <a href="./index.php" class="navbar-brand" href="#" target="_blank" rel="noopener"><img src="img/logo0.png" hieght="30" width="41"></a>
+        <h3 class="text-white">ADMINISTRATOR</h3>
+        <a href="./adminlogin.php" class="navbar-brand" href="#"><img src="img/logouticon.png" hieght="30" width="41"></a>
+
+    </nav>
+    
     <div id="newseventsModal" class="modal fade" role="dialog">
       <div class="modal-dialog modal-lg" role="content">
         <div class="modal-content">

@@ -1,5 +1,10 @@
 <?php
 session_start();
+
+if (!isset($_SESSION['sessionid'])){
+  header("Location: adminlogin.php");
+}
+
 if ( isset($_GET['subject']) ) { 
     
     if($_GET['subject']==1) $_SESSION['subject'] ="physics";
