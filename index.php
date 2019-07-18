@@ -354,7 +354,11 @@
                 <div class="media-body">
                   <h2 class="mt-0">Sunil Jaiswal</h2>
                   <h4>Director</h4>
-                  <p class="d-none d-sm-block">Director's word/About the director</p>
+                    
+                    <blockquote class="blockquote d-none d-sm-block text-justify">
+                    <footer class="mb-0 blockquote-footer" >" It the responsibility of the youth to be patient and determined and move forward towards building their future. Give the obligation of building your future in the hands of those who are really serious about it and understand the value of it.<br> We take the challenge of your future development seriously, your untimely energy and endless potential remain vigilant towards achieving right direction. Your patience, discipline and belief is our key. Our organization has contributed in the future creation of more than 24 thousand competitions. This is our achievement. "</footer>
+                    </blockquote>
+                
                 </div>
               </div>
 
