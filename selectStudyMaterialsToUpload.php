@@ -12,7 +12,7 @@ if ( isset($_GET['subject']) ) {
     else $_SESSION['subject'] ="Railway";
 }
 else {
-$_SESSION['subject']="banking";
+$_SESSION['subject']="Banking";
 }
 ?>
 
