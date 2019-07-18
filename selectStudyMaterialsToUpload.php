@@ -7,12 +7,12 @@ if (!isset($_SESSION['sessionid'])){
 
 if ( isset($_GET['subject']) ) { 
     
-    if($_GET['subject']==1) $_SESSION['subject'] ="physics";
-    else if($_GET['subject']==2) $_SESSION['subject'] ="chemistry";
-    else $_SESSION['subject'] ="maths";
+    if($_GET['subject']==1) $_SESSION['subject'] ="Banking";
+    else if($_GET['subject']==2) $_SESSION['subject'] ="SSC";
+    else $_SESSION['subject'] ="Railway";
 }
 else {
-$_SESSION['subject']="physics";
+$_SESSION['subject']="banking";
 }
 ?>
 
@@ -62,9 +62,9 @@ $_SESSION['subject']="physics";
             </button>
           </div>
           <div class="modal-body">
-            <a href="selectStudyMaterialsToUpload.php?subject=1" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">Physics</a>
-            <a href="selectStudyMaterialsToUpload.php?subject=2" class="btn btn-success btn-lg btn-block" role="button" aria-pressed="true">Chemistry</a>
-            <a href="selectStudyMaterialsToUpload.php?subject=3" class="btn btn-danger btn-lg btn-block" role="button" aria-pressed="true">Maths</a>
+            <a href="selectStudyMaterialsToUpload.php?subject=1" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">Banking</a>
+            <a href="selectStudyMaterialsToUpload.php?subject=2" class="btn btn-success btn-lg btn-block" role="button" aria-pressed="true">SSC</a>
+            <a href="selectStudyMaterialsToUpload.php?subject=3" class="btn btn-danger btn-lg btn-block" role="button" aria-pressed="true">Railway</a>
           </div>
         </div>
       </div>

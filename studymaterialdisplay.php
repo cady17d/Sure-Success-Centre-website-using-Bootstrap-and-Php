@@ -71,23 +71,23 @@
                 
                 <ul class="nav nav-tabs">
                   <li class="nav-item">
-                    <a class="nav-link active" href="#p" role="tab" data-toggle="tab">Physics, P</a>
+                    <a class="nav-link active" href="#banking" role="tab" data-toggle="tab">Banking</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#c" role="tab" data-toggle="tab">Chemistry, C</a>
+                    <a class="nav-link" href="#ssc" role="tab" data-toggle="tab">SSC</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#m" role="tab" data-toggle="tab">Maths, M</a>
+                    <a class="nav-link" href="#railway" role="tab" data-toggle="tab">Railway</a>
                   </li>
                 </ul>
 
                 <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane fade show active" id="p">
-                    <h3>Physics <small>P</small></h3>
+                  <div role="tabpanel" class="tab-pane fade show active" id="banking">
+                    <h3>Banking</h3>
                     <ul>
                       
                         <?php
-                        $dirname = "uploads/studymaterials/physics";
+                        $dirname = "uploads/studymaterials/banking";
                         $files = scandir($dirname);
                         $ignore = Array(".", "..");
                         foreach($files as $curfile){
@@ -95,7 +95,7 @@
 
                         ?>
 
-                        <li><a href="uploads/studymaterials/physics/<?php echo $curfile; ?>" class="text-primary" target="_blank" rel="noopener"><?php echo $curfile; ?></a></li>
+                        <li><a href="uploads/studymaterials/banking/<?php echo $curfile; ?>" class="text-primary" target="_blank" rel="noopener"><?php echo $curfile; ?></a></li>
 
 
 
@@ -109,11 +109,11 @@
                   </div>
 
 
-                  <div role="tabpanel" class="tab-pane fade" id="c">
-                    <h3>Chemistry <small>C</small></h3>
+                  <div role="tabpanel" class="tab-pane fade" id="ssc">
+                    <h3>SSC</h3>
                     <ul>
                       <?php
-                        $dirname = "uploads/studymaterials/chemistry";
+                        $dirname = "uploads/studymaterials/ssc";
                         $files = scandir($dirname);
                         $ignore = Array(".", "..");
                         foreach($files as $curfile){
@@ -121,7 +121,7 @@
 
                         ?>
 
-                        <li><a href="uploads/studymaterials/chemistry/<?php echo $curfile; ?>" class="text-primary" target="_blank" rel="noopener"><?php echo $curfile; ?></a></li>
+                        <li><a href="uploads/studymaterials/ssc/<?php echo $curfile; ?>" class="text-primary" target="_blank" rel="noopener"><?php echo $curfile; ?></a></li>
 
 
 
@@ -134,11 +134,11 @@
                   </div>
 
 
-                  <div role="tabpanel" class="tab-pane fade" id="m">
-                    <h3>Maths <small>M</small></h3>
+                  <div role="tabpanel" class="tab-pane fade" id="railway">
+                    <h3>Railway</h3>
                         <ul>
                         <?php
-                        $dirname = "uploads/studymaterials/maths";
+                        $dirname = "uploads/studymaterials/railway";
                         $files = scandir($dirname);
                         $ignore = Array(".", "..");
                         foreach($files as $curfile){
@@ -146,7 +146,7 @@
 
                         ?>
 
-                        <li><a href="uploads/studymaterials/maths/<?php echo $curfile; ?>" class="text-primary" target="_blank" rel="noopener"><?php echo $curfile; ?></a></li>
+                        <li><a href="uploads/studymaterials/railway/<?php echo $curfile; ?>" class="text-primary" target="_blank" rel="noopener"><?php echo $curfile; ?></a></li>
 
 
 
